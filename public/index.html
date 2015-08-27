@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="./stylesheets/style.css">
     <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script src="./bower_components/angular/angular.min.js"></script>
-    <script type="text/javascript" scr="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./app.js"></script>
-    <!-- <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <base href="/">
   </head>
-  <body ng-controller="HomeController">
+  <body ng-controller="ApplicationController">
     <nav class="navbar navbar-default">
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -65,5 +67,8 @@
   </div><!-- /.container-fluid -->
 </nav>
   {{ 1 + 2}}
+  <div ng-view="">
+  </div>
+  {{name}}
   </body>
 </html>
